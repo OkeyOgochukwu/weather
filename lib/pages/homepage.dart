@@ -40,26 +40,23 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontWeight: FontWeight.w600,
                       fontSize: 80),
                 ),
-                Stack(
-                  //overflow: Overflow.visible,
+                Row(
                   children: [
-                    Container(
-
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage("assets/cloud.jpg"), fit: BoxFit.cover),
+                    Expanded(
+                      child: ListTile(
+                        isThreeLine: true,
+                        title: Image(image: AssetImage('assets/water.jpg')),
+                        subtitle: Text('12m/s'),
                       ),
-                      child: Row(
-                        children: [
-                          Text('',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black ) ),
-                          Text(''),
-                        ]
+                    )
 
-                      ),
 
-                    )],
+
+                  ],
+
                 )
               ],
+
             ),
           ),
         ),
